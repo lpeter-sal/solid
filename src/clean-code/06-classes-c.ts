@@ -1,8 +1,6 @@
 (() => {
-
     // Aplicando el principio de responsabilidad única
     // Priorizar la composición sobre la herencia
-
 
     type Gender = 'M' | 'F';
 
@@ -73,7 +71,6 @@
         gender          : Gender;
         birthdate       : Date
     }
-
 
     //* Composición de clases
     //* Separa la lógica de cada clase en su propia responsabilidad

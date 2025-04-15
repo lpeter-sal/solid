@@ -68,8 +68,6 @@
             this.attributes = new Attributes({ value, placeholder });
             this.events = new Events();
         }
-
-
     }
 
     const nameField = new InputElement({
