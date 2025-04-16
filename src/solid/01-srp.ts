@@ -28,7 +28,6 @@
     // Usualmente, esto es una clase para controlar la vista que es desplegada al usuario
     // Recuerden que podemos tener muchas vistas que realicen este mismo trabajo.
     class ProductBloc {
-
         private productService: ProductService;
         private mailer: Mailer;
 
@@ -54,11 +53,8 @@
     }
 
     class CartBloc {
-
         private itemsInCart: Object[] = [];
-
-
-            
+    
         addToCart( productId: number ) {
             // Agregar al carrito de compras
             console.log('Agregando al carrito ', productId );
@@ -75,12 +71,5 @@
     productBloc.saveProduct({ id: 10, name: 'OLED TV' });
     productBloc.notifyClients();
     cartBloc.addToCart(10);
-
-
-
-
-
-
-
 
 })();
